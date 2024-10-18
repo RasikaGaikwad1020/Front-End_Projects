@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: rgb(51, 50, 50);
+    }
+    #bar1{
+        display: flex;
+        justify-content: space-between;
+    }
+    #urlbar{
+        height: 28px;
+        width: 900px;
+        border: 1px solid rgb(20, 20, 20);
+        background-color: rgb(20, 20, 20);
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        /* margin: auto; */
+        padding-top: 0 ;
+    }
+    .icon{
+        height: 25px;
+        width: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    #googlelogo{
+        margin-left: 4px;
+        margin-top: 2px;
+        height: 23px;
+        width: 23px;
+    }
+    #starlogo{
+        margin-right: 4px;
+    }
+    #Rlogo{
+        background-color: rgb(113, 25, 148);
+        font-family: sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+    h4{
+        display: flex;
+        margin-top: 4px;
+        margin-left: 7px;
+    }
+    h3{
+        display: flex;
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+    /* Bar 2 */
+    .bar2{
+            display: flex;
+            justify-content: flex-end;   
+        }
+        .b2a{
+            color: white;
+            display: flex;
+            font-size: 13px;
+            font-family: Arial ;
+        }
+        .b2a1{
+            margin-left: 20px;
+        }
+        .b2b{
+            display: flex;
+        }
+        .b2b1{
+        background-image: url(./experiment.png);
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-left: 20px;
+        }
+        .b2b2{
+        background-image: url(./apps.png);
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-left: 20px;
+        }
+        .b2c{
+            height: 30px;
+            width: 30px;
+            background-color:  rgb(113, 25, 148);
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family:sans-serif;
+            margin-left: 20px;
+            margin-top: -5px;
+        }
+        #R{
+            margin-top: 19px;
+            margin-right: 7px;
+        }
+        hr{
+            margin-top: -7px;
+            margin-bottom: 6px;
+        }
+        /* Google Img & Share */
+        .container{
+            height: 120px;
+            width: 330px;
+            border: 1px solid;
+            border-radius: 20px;
+            background-color: #1F1F1F;
+            padding: 16px 24px ;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            margin-left: 508px;
+        }
+        .gimg{
+            height: 125px;
+            width: 335px;
+        }
+        .share1{
+            background-image: url(./share.jpg);
+            height: 40px;
+            width: 40px;
+            margin-left: 893px;
+            margin-top: -40px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* URL Bar 2 */
+        .urlbar2{
+            height: 40px;
+            width: 650px;
+            border-radius: 50px;
+            margin-top: 30px;
+            margin-left: 380px;
+            background-color: white;
+            display: flex;
+            
+        }
+        .search{
+            background-image: url(./search.jpg);
+            height: 31px;
+            width: 31px;
+            margin-left: 5px;
+            margin-top: 4px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #plh1{
+            margin-left: 18px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            font-weight: lighter;
+            height: 10px;
+            width: 280px;
+            border: none;
+        }
+        .mic{
+            background-image: url(./mic.jpg);
+            height: 35px;
+            width: 35px;
+            margin-left: 234px;
+            margin-top: 2px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .lens{
+            background-image: url(./lens.jpg);
+            height: 35px;
+            width: 35px;
+            margin-left: 5px;
+            margin-top: 2px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .shortcuts{
+            display: flex;
+            margin-left: 620px;
+            margin-top: 35px;
+        }
+        .webstore{
+            background-image: url(./webstore.jpg);
+            height: 49px;
+            width: 49px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .addsc{
+            background-image: url(./add.jpg);
+            height: 46px;
+            width: 46px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 70px;
+        }
+        .shortcutname{
+            display: flex;
+        }
+        .sc{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        #WS{
+            margin-left: 608px;
+        }
+        #AS{
+            margin-left: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bar1">
+    <img class="icon" src="./arrow_back.png">
+    <img class="icon" src="./arrow_forward.png">
+    <img class="icon" src="./refresh.png">
+    <div id="urlbar">
+    <img class="icon" id="googlelogo" src="./google-grey-logo.png">
+    <img class="icon" id="starlogo" src="./star.png">
+    </div>
+    <img class="icon" src="./extension.png">
+    <h3>|</h3>
+    <img class="icon" src="./music.png">
+    <img class="icon" src="./download_logo.png">
+    <div class="icon" id="Rlogo"><h4>R</h4></div>
+    <img class="icon" src="./3dot.png">
+    </div><hr><br>
+    <!-- bar 2 -->
+    <div class="bar2">   
+        <div class="b2a">
+            <div><h4 class="b2a1" id="G">Gmail</h4></div>
+            <div><h4 class="b2a1" id="I">Images</h4></div>
+        </div>
+        <div class="b2b">
+            <div class="b2b1"></div>
+            <div class="b2b2"></div>
+        </div>
+        <div class="b2c">
+            <div><h3 id="R">R</h3></div>
+        </div>
+    </div>
+    <!-- Google Image & Share -->
+    <div class="container"><img class="gimg" src="./google_img.png"></div>
+    <div class="share1"></div>
+    <!-- URL Bar2 -->
+    <div class="urlbar2">
+        <div class="search"></div>
+        <div class="plch"><h3 id="plh1">Search Google or type a URL</h3></div>
+        <div class="mic"></div>
+        <div class="lens"></div>
+    </div>
+    <!-- shortcuts -->
+    <div class="shortcuts">
+        <div class="webstore"></div>
+        <div class="addsc"></div>
+    </div>
+    <div class="shortcutname">
+        <div class="sc" id="WS"><p>Web Store</p></div>
+        <div class="sc" id="AS"><p>Add Shortcut</p></div>
+    </div>
+    </div>
+</body>
+</html>
